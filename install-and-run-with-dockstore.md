@@ -34,7 +34,7 @@ dockstore
 ```
 It will ask you some questions:
 
-* You can find your token at the second page/step 2 of [dockstore onboarding](https://dockstore.org/onboarding).
+* You can find your token at the second page/step 2 of [dockstore onboarding](https://dockstore.org/onboarding) or use something like "DUMMY_TOKEN" if you do not want to edit anything on Dockstore
 * The `server url` appears to be `https://dockstore.org:8443`.
 
 ## Install `cwltool`
@@ -77,7 +77,7 @@ https://github.com/CancerCollaboratory/dockstore-tool-bamstats/raw/develop/rna.S
 ```
 which is the URL to a BAM file that will work (any BAM file will work as long as it's accessible!).
 
-We also have to specify the output by changing the `bamstats_report` path, but here we get to make it anything we want (as long as it's in a valid directory). I suggest `/tmp/bamstats_report.zip`.
+We also have to specify the output by changing the `bamstats_report` path, but here we get to make it anything we want (as long as it's in a valid directory). I suggest `/tmp/bamstats_report.zip`.<sup>1</sup>
 
 And now, you can run the tool like so --
 
@@ -97,3 +97,5 @@ This command will now:
 The results should be a zipfile - you can try `unzip -v /tmp/bamstats_report.zip` to see its contents.
 
 Voila!
+
+<sup>1</sup> Note that you can also get input from and output to locations like AWS S3 and ICGC Storage by using file provisioning plugins documented [here](https://dockstore.org/docs/advanced-features#file-provisioning). Remember to either run `dockstore plugin download` or install your own plugins in this case
