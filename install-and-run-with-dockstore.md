@@ -41,10 +41,9 @@ It will ask you some questions:
 
 Now, install the Common Workflow Language default/reference runner:
 ```
-
+sudo apt install python-pip
 pip install setuptools==28.8.0
-pip install cwl-runner cwltool==1.0.20170217172322 \
-    schema-salad==2.2.20170222151604 avro==1.8.1
+pip install cwl-runner cwltool==1.0.20170217172322 schema-salad==2.2.20170222151604 avro==1.8.1 ruamel.yaml==0.12.4
 ```
 
 ## Add your user account to the docker group
