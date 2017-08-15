@@ -19,7 +19,7 @@ sudo apt-get update && sudo apt-get install -y oracle-java8-set-default
 
 ```
 mkdir ~/bin
-curl -L -o ~/bin/dockstore https://github.com/ga4gh/dockstore/releases/download/1.2.3/dockstore 
+curl -L -o ~/bin/dockstore https://github.com/ga4gh/dockstore/releases/download/1.2.5/dockstore 
 chmod +x ~/bin/dockstore
 
 # add to path
